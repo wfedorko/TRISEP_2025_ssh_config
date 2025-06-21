@@ -1,7 +1,11 @@
 # TRISEP_2025_ssh_config
 
 This repo stores the ssh configuration files for all the TRISEP students.
-Download 'your' file and copy it to the home direcotry on your laptop. If a file .ssh/config already exists append the contents of the fle you just downladed to the existing .ssh/config file. If .ssh/config does not exist - you can copy over the new file to .ssh/config.
+Download 'your' file and copy it to the home direcotry on your laptop. 
+
+Note: If you put your keys in non-default locations you might need to edit the ```IdentityFile``` fields in the config - pointing to the correct location. The file supplied assumes you have used the defaults.
+
+If a file .ssh/config already exists append the contents of the fle you just downladed to the existing .ssh/config file. If .ssh/config does not exist - you can copy over the new file to .ssh/config.
 
 On linux, mac, WSL something like this should work in both cases:
 
