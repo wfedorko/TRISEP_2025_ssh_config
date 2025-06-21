@@ -3,10 +3,13 @@
 This repo stores the ssh configuration files for all the TRISEP students.
 Download 'your' file and copy it to the home direcotry on your laptop. If a file .ssh/config already exists append the contents of the fle you just downladed to the existing .ssh/config file. If .ssh/config does not exist - you can copy over the new file to .ssh/config
 On linux, mac, WSL something like this should work in both cases:
+
 ```cat config_<your_user_id> | tee -a .ssh/config >& /dev/null```
 
 ***Restart your terminal.***
+
 Now you should be able to log in by typing:
+
 ```ssh ML-TRISEP```
 
 or
