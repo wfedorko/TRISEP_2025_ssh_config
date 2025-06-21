@@ -1,0 +1,30 @@
+Host ML-TRISEP-CONTAINER
+  HostName ml2.scicomp.triumf.ca
+  RemoteCommand apptainer exec --nv -B /run/user/${UID} -B /fast_scratch_1 -B /fast_scratch_2 -B /fast_scratch_3 -B /fast_scratch_4 -B /home /fast_scratch_1/triumfmlutils/containers/container_base_ml_recommended_trisep.sif /bin/bash
+  RequestTTY yes
+  ForwardAgent yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  User wfedorko
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  ServerAliveInterval 20
+  ServerAliveCountMax 5
+  ConnectTimeout 30
+  ProxyJump leongc11@hoop.trisep.triumf.ca
+
+
+Host ML-TRISEP
+  HostName ml2.scicomp.triumf.ca
+  RequestTTY yes
+  ForwardAgent yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  XauthLocation /usr/bin/xauth
+  User wfedorko
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  ServerAliveInterval 20
+  ServerAliveCountMax 5
+  ConnectTimeout 30
+  ProxyJump leongc11 @hoop.trisep.triumf.ca
