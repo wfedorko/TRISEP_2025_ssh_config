@@ -5,7 +5,7 @@ Host ML-TRISEP-CONTAINER
   ForwardAgent yes
   ForwardX11 yes
   ForwardX11Trusted yes
-  User wfedorko
+  User justusb
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   ServerAliveInterval 20
@@ -20,7 +20,7 @@ Host ML-TRISEP
   ForwardAgent yes
   ForwardX11 yes
   ForwardX11Trusted yes
-  User wfedorko
+  User justusb
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
   ServerAliveInterval 20
